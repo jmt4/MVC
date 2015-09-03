@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Countries List";
+}
+
+<h2>Countries List</h2>
+<ul>
+    <!--
+         Like Django, VS needs to know what code is HTML and what code is C#.
+         We add the "at" symbol before C# code
+    -->
+    @foreach(string strCountry in (List<string>)ViewData["Countries"])
+    { 
+        <li>@strCountry</li>
+    }
+</ul>
+
